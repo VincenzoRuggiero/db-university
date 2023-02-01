@@ -32,5 +32,4 @@
     SELECT * 
     FROM `exams`
     WHERE time(`hour`) > '14:00:00'
-    AND `date` = '2020-06-20'  
-    ORDER BY `exams`.`hour` ASC
+    AND `date` = '2020-06-20';
