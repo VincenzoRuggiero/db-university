@@ -7,3 +7,8 @@
     GROUP BY `enrolment_date`;
 
 
+2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
+
+    SELECT COUNT(*) AS "Nr Insegnanti", `office_address` AS "Indirizzo Edificio"
+    FROM `teachers`
+    GROUP BY `office_address`;
