@@ -36,6 +36,8 @@
     WHERE time(`hour`) > '14:00:00'
     AND `date` = '2020-06-20';
 
+    alternativa da correzione --> WHERE HOUR(`hour`) >= 14 <--
+
 
 6. Selezionare tutti i corsi di laurea magistrale (38)
 
