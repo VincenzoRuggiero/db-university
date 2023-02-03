@@ -50,9 +50,10 @@
 
 3. Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44)
 
-    SELECT `courses`.`id`, `courses`.`name` AS "Nome corso", `teachers`.`id` AS "Nome insegnante"
+    SELECT `courses`.`id` AS "ID Corso", `courses`.`name` AS "Nome corso", `teachers`.`id` AS "ID insegnante"
     FROM `courses`
-    JOIN `teachers` ON `courses`.`id`
+    JOIN `course_teacher` ON `courses`.`id` = `course_teacher`.`course_id`
+    JOIN `teachers` ON `course_teacher`.`teacher_id` = `teachers`.`id`
     WHERE `teachers`.`id` = 44;
 
 
